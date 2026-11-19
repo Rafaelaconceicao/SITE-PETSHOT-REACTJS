@@ -1,13 +1,18 @@
 
 import './App.css'
+import Folder from './components/Folder'
+import Header from './components/Header'
+import Clientes from './pages/clientes'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Petshop </h1>
-    </>
+    <div className="app-shell">
+      <Folder />
+      <main className="app-main">
+        <Clientes />
+      </main>
+      <Header />
+    </div>
   )
 }
 
